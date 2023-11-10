@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32D4DC572AFDEDD800304331 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DC562AFDEDD800304331 /* CalendarView.swift */; };
+		32D4DC592AFDEDEA00304331 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DC582AFDEDEA00304331 /* TodoListView.swift */; };
 		D283E6062AFDD295008889EA /* Note_ingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6052AFDD295008889EA /* Note_ingApp.swift */; };
-		D283E6082AFDD295008889EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6072AFDD295008889EA /* ContentView.swift */; };
+		D283E6082AFDD295008889EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6072AFDD295008889EA /* MainView.swift */; };
 		D283E60A2AFDD296008889EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D283E6092AFDD296008889EA /* Assets.xcassets */; };
 		D283E60D2AFDD296008889EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D283E60C2AFDD296008889EA /* Preview Assets.xcassets */; };
 		D283E60F2AFDD296008889EA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E60E2AFDD296008889EA /* Persistence.swift */; };
@@ -65,9 +67,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		32D4DC562AFDEDD800304331 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		32D4DC582AFDEDEA00304331 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		D283E6022AFDD295008889EA /* Note-ing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note-ing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D283E6052AFDD295008889EA /* Note_ingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_ingApp.swift; sourceTree = "<group>"; };
-		D283E6072AFDD295008889EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D283E6072AFDD295008889EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		D283E6092AFDD296008889EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D283E60C2AFDD296008889EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D283E60E2AFDD296008889EA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -149,11 +153,13 @@
 			isa = PBXGroup;
 			children = (
 				D283E6052AFDD295008889EA /* Note_ingApp.swift */,
-				D283E6072AFDD295008889EA /* ContentView.swift */,
+				D283E6072AFDD295008889EA /* MainView.swift */,
+				32D4DC562AFDEDD800304331 /* CalendarView.swift */,
 				D283E6092AFDD296008889EA /* Assets.xcassets */,
 				D283E60E2AFDD296008889EA /* Persistence.swift */,
 				D283E6102AFDD296008889EA /* Note_ing.xcdatamodeld */,
 				D283E60B2AFDD296008889EA /* Preview Content */,
+				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
 			);
 			path = "Note-ing";
 			sourceTree = "<group>";
@@ -371,9 +377,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D4DC572AFDEDD800304331 /* CalendarView.swift in Sources */,
 				D283E6122AFDD296008889EA /* Note_ing.xcdatamodeld in Sources */,
+				32D4DC592AFDEDEA00304331 /* TodoListView.swift in Sources */,
 				D283E60F2AFDD296008889EA /* Persistence.swift in Sources */,
-				D283E6082AFDD295008889EA /* ContentView.swift in Sources */,
+				D283E6082AFDD295008889EA /* MainView.swift in Sources */,
 				D283E6062AFDD295008889EA /* Note_ingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,7 +537,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
