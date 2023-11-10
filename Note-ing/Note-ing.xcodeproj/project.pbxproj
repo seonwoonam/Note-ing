@@ -16,6 +16,8 @@
 		D283E61C2AFDD296008889EA /* Note_ingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E61B2AFDD296008889EA /* Note_ingTests.swift */; };
 		D283E6262AFDD296008889EA /* Note_ingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6252AFDD296008889EA /* Note_ingUITests.swift */; };
 		D283E6282AFDD296008889EA /* Note_ingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6272AFDD296008889EA /* Note_ingUITestsLaunchTests.swift */; };
+		D283E6362AFDD418008889EA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D283E6352AFDD418008889EA /* RxCocoa */; };
+		D283E6382AFDD418008889EA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D283E6372AFDD418008889EA /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D283E6382AFDD418008889EA /* RxSwift in Frameworks */,
+				D283E6362AFDD418008889EA /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +153,10 @@
 			dependencies = (
 			);
 			name = "Note-ing";
+			packageProductDependencies = (
+				D283E6352AFDD418008889EA /* RxCocoa */,
+				D283E6372AFDD418008889EA /* RxSwift */,
+			);
 			productName = "Note-ing";
 			productReference = D283E6022AFDD295008889EA /* Note-ing.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +229,9 @@
 				Base,
 			);
 			mainGroup = D283E5F92AFDD295008889EA;
+			packageReferences = (
+				D283E6342AFDD418008889EA /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = D283E6032AFDD295008889EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -585,6 +596,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D283E6342AFDD418008889EA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D283E6352AFDD418008889EA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D283E6342AFDD418008889EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D283E6372AFDD418008889EA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D283E6342AFDD418008889EA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		D283E6102AFDD296008889EA /* Note_ing.xcdatamodeld */ = {
