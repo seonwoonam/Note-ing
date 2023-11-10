@@ -105,7 +105,7 @@
 		32D4DC652AFDF7C900304331 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		32D4DC662AFDF7C900304331 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		32D4DC792AFDF7E600304331 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
-		32D4DC832AFDFD5800304331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32D4DC832AFDFD5800304331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D283E6022AFDD295008889EA /* Note-ing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Note-ing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D283E6052AFDD295008889EA /* Note_ingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_ingApp.swift; sourceTree = "<group>"; };
 		D283E6072AFDD295008889EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -188,6 +188,37 @@
 			path = Pretendard;
 			sourceTree = "<group>";
 		};
+		32D4DC842AFE074100304331 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DC832AFDFD5800304331 /* Info.plist */,
+				32D4DC5C2AFDF75300304331 /* Font */,
+				D283E6092AFDD296008889EA /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		32D4DC852AFE075600304331 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D283E60B2AFDD296008889EA /* Preview Content */,
+				D283E6072AFDD295008889EA /* MainView.swift */,
+				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
+				32D4DC5A2AFDF66200304331 /* SplashView.swift */,
+				32D4DC562AFDEDD800304331 /* CalendarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		32D4DC862AFE086200304331 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D283E6102AFDD296008889EA /* Note_ing.xcdatamodeld */,
+				D283E60E2AFDD296008889EA /* Persistence.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		D283E5F92AFDD295008889EA = {
 			isa = PBXGroup;
 			children = (
@@ -214,17 +245,10 @@
 		D283E6042AFDD295008889EA /* Note-ing */ = {
 			isa = PBXGroup;
 			children = (
-				32D4DC832AFDFD5800304331 /* Info.plist */,
+				32D4DC862AFE086200304331 /* Data */,
+				32D4DC852AFE075600304331 /* Views */,
+				32D4DC842AFE074100304331 /* Resource */,
 				D283E6052AFDD295008889EA /* Note_ingApp.swift */,
-				D283E6072AFDD295008889EA /* MainView.swift */,
-				32D4DC5A2AFDF66200304331 /* SplashView.swift */,
-				32D4DC5C2AFDF75300304331 /* Font */,
-				32D4DC562AFDEDD800304331 /* CalendarView.swift */,
-				D283E6092AFDD296008889EA /* Assets.xcassets */,
-				D283E60E2AFDD296008889EA /* Persistence.swift */,
-				D283E6102AFDD296008889EA /* Note_ing.xcdatamodeld */,
-				D283E60B2AFDD296008889EA /* Preview Content */,
-				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
 			);
 			path = "Note-ing";
 			sourceTree = "<group>";
