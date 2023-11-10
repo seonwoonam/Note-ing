@@ -191,23 +191,21 @@
 		32D4DC842AFE074100304331 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				32D4DC832AFDFD5800304331 /* Info.plist */,
 				32D4DC5C2AFDF75300304331 /* Font */,
 				D283E6092AFDD296008889EA /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		32D4DC852AFE075600304331 /* Views */ = {
+		32D4DC852AFE075600304331 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				D283E60B2AFDD296008889EA /* Preview Content */,
+				32D4DC892AFE0A0B00304331 /* ToDoList */,
+				32D4DC882AFE09D100304331 /* Calendar */,
 				D283E6072AFDD295008889EA /* MainView.swift */,
-				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
 				32D4DC5A2AFDF66200304331 /* SplashView.swift */,
-				32D4DC562AFDEDD800304331 /* CalendarView.swift */,
 			);
-			path = Views;
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		32D4DC862AFE086200304331 /* Data */ = {
@@ -217,6 +215,62 @@
 				D283E60E2AFDD296008889EA /* Persistence.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		32D4DC872AFE09B800304331 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D283E6052AFDD295008889EA /* Note_ingApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		32D4DC882AFE09D100304331 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DC8D2AFE0A6200304331 /* View */,
+				32D4DC8C2AFE0A5500304331 /* ViewModel */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		32D4DC892AFE0A0B00304331 /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DC8A2AFE0A3100304331 /* View */,
+				32D4DC8B2AFE0A3D00304331 /* ViewModel */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		32D4DC8A2AFE0A3100304331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32D4DC8B2AFE0A3D00304331 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32D4DC8C2AFE0A5500304331 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		32D4DC8D2AFE0A6200304331 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32D4DC562AFDEDD800304331 /* CalendarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D283E5F92AFDD295008889EA = {
@@ -245,10 +299,12 @@
 		D283E6042AFDD295008889EA /* Note-ing */ = {
 			isa = PBXGroup;
 			children = (
+				32D4DC832AFDFD5800304331 /* Info.plist */,
+				D283E60B2AFDD296008889EA /* Preview Content */,
+				32D4DC872AFE09B800304331 /* Application */,
 				32D4DC862AFE086200304331 /* Data */,
-				32D4DC852AFE075600304331 /* Views */,
+				32D4DC852AFE075600304331 /* Presentation */,
 				32D4DC842AFE074100304331 /* Resource */,
-				D283E6052AFDD295008889EA /* Note_ingApp.swift */,
 			);
 			path = "Note-ing";
 			sourceTree = "<group>";
