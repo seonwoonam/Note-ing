@@ -14,17 +14,17 @@ struct MainView: View {
         TabView {
               CalendarView()
                 .tabItem {
-                  Image("calendar")
-                    Text("캘린더").foregroundColor(Color("MainGreen"))
+                    Image(systemName: "calendar").frame(width: 20, height: 20)
+                    Text("캘린더")
                 }
               TodoListView()
                 .tabItem {
-                  Image("list")
+                    Image(systemName: "checklist")
                   Text("오늘의 할일")
                 }
             }
             .font(.headline)
-            .accentColor(.green)
+            .accentColor(Color("MainGreen"))
     }
    
 }
