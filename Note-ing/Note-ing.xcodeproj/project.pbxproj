@@ -21,7 +21,6 @@
 		D283E65E2AFDD89F008889EA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D283E65D2AFDD89F008889EA /* WidgetKit.framework */; };
 		D283E6602AFDD89F008889EA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D283E65F2AFDD89F008889EA /* SwiftUI.framework */; };
 		D283E6632AFDD89F008889EA /* Note_ing_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6622AFDD89F008889EA /* Note_ing_WidgetBundle.swift */; };
-		D283E6652AFDD89F008889EA /* Note_ing_WidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6642AFDD89F008889EA /* Note_ing_WidgetLiveActivity.swift */; };
 		D283E6672AFDD89F008889EA /* Note_ing_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283E6662AFDD89F008889EA /* Note_ing_Widget.swift */; };
 		D283E6692AFDD8A0008889EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D283E6682AFDD8A0008889EA /* Assets.xcassets */; };
 		D283E66D2AFDD8A0008889EA /* Note-ing-WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D283E65B2AFDD89F008889EA /* Note-ing-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -82,7 +81,6 @@
 		D283E65D2AFDD89F008889EA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		D283E65F2AFDD89F008889EA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		D283E6622AFDD89F008889EA /* Note_ing_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_ing_WidgetBundle.swift; sourceTree = "<group>"; };
-		D283E6642AFDD89F008889EA /* Note_ing_WidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_ing_WidgetLiveActivity.swift; sourceTree = "<group>"; };
 		D283E6662AFDD89F008889EA /* Note_ing_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note_ing_Widget.swift; sourceTree = "<group>"; };
 		D283E6682AFDD8A0008889EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D283E66A2AFDD8A0008889EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				D283E6622AFDD89F008889EA /* Note_ing_WidgetBundle.swift */,
-				D283E6642AFDD89F008889EA /* Note_ing_WidgetLiveActivity.swift */,
 				D283E6662AFDD89F008889EA /* Note_ing_Widget.swift */,
 				D283E6682AFDD8A0008889EA /* Assets.xcassets */,
 				D283E66A2AFDD8A0008889EA /* Info.plist */,
@@ -404,7 +401,6 @@
 			files = (
 				D283E6672AFDD89F008889EA /* Note_ing_Widget.swift in Sources */,
 				D283E6632AFDD89F008889EA /* Note_ing_WidgetBundle.swift in Sources */,
-				D283E6652AFDD89F008889EA /* Note_ing_WidgetLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -533,7 +529,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

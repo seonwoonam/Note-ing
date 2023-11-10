@@ -12,6 +12,5 @@ import SwiftUI
 struct Note_ing_WidgetBundle: WidgetBundle {
     var body: some Widget {
         Note_ing_Widget()
-        Note_ing_WidgetLiveActivity()
     }
 }
