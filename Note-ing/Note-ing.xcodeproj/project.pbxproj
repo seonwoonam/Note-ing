@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		323B97662B072455000B1B78 /* ToDoListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B97652B072455000B1B78 /* ToDoListViewItem.swift */; };
+		323B97682B07256E000B1B78 /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323B97672B07256E000B1B78 /* CheckList.swift */; };
 		32D4DC572AFDEDD800304331 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DC562AFDEDD800304331 /* CalendarView.swift */; };
 		32D4DC592AFDEDEA00304331 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DC582AFDEDEA00304331 /* TodoListView.swift */; };
 		32D4DC5B2AFDF66200304331 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D4DC5A2AFDF66200304331 /* SplashView.swift */; };
@@ -92,6 +94,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		323B97652B072455000B1B78 /* ToDoListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewItem.swift; sourceTree = "<group>"; };
+		323B97672B07256E000B1B78 /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
 		32D4DC562AFDEDD800304331 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		32D4DC582AFDEDEA00304331 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		32D4DC5A2AFDF66200304331 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -213,6 +217,7 @@
 			children = (
 				D283E6102AFDD296008889EA /* Note_ing.xcdatamodeld */,
 				D283E60E2AFDD296008889EA /* Persistence.swift */,
+				323B97672B07256E000B1B78 /* CheckList.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				32D4DC582AFDEDEA00304331 /* TodoListView.swift */,
+				323B97652B072455000B1B78 /* ToDoListViewItem.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -546,6 +552,8 @@
 			files = (
 				32D4DC572AFDEDD800304331 /* CalendarView.swift in Sources */,
 				D283E6122AFDD296008889EA /* Note_ing.xcdatamodeld in Sources */,
+				323B97682B07256E000B1B78 /* CheckList.swift in Sources */,
+				323B97662B072455000B1B78 /* ToDoListViewItem.swift in Sources */,
 				32D4DC592AFDEDEA00304331 /* TodoListView.swift in Sources */,
 				D283E60F2AFDD296008889EA /* Persistence.swift in Sources */,
 				D283E6082AFDD295008889EA /* MainView.swift in Sources */,
