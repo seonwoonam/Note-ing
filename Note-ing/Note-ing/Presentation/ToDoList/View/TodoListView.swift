@@ -13,7 +13,21 @@ struct TodoListView: View {
         case alreadyDid
         case all
     }
-    @State var checkList: [CheckComponent] = [CheckComponent(isChecked: false, content: "데이터 통신입문")]
+
+    @State private var notCheckedLists = [
+        CheckComponent(isChecked: false, content: "데이터 통신입문"),
+        CheckComponent(isChecked: false, content: "컴파일러 구성"),
+        CheckComponent(isChecked: false, content: "암호학과 네트워크 보안"),
+        CheckComponent(isChecked: false, content: "컴퓨터 종합설계")
+            ]
+    
+    @State private var checkedList = [
+        CheckComponent(isChecked: false, content: "데이터 통신입문"),
+        CheckComponent(isChecked: true, content: "컴파일러 구성"),
+        CheckComponent(isChecked: false, content: "암호학과 네트워크 보안"),
+        CheckComponent(isChecked: false, content: "컴퓨터 종합설계")
+            ]
+    
     @State var selectedBtn: ListSelected = .notYet
     
     var body: some View {
@@ -38,19 +52,28 @@ struct TodoListView: View {
                     }
                     Spacer()
                     
-                    Button(action: {
-                        selectedBtn = .all
-                    }){
-                        Image(systemName: "checklist").foregroundColor(selectedBtn == .all ? Color("MainGreen") : .gray)
-                    }
-                    Spacer()
                 }.padding(.top, 10)
                 
                 if #available(iOS 16.0, *) {
                     List {
-                        Text("data communication")
-                        Text("crypto")
-                        
+                        ForEach($checkedList, id: \.self) { $list in
+                            HStack {
+                                Text("\(list.content)")
+                                
+                                Spacer()
+                                
+                                Button(action: {
+                                    if(selectedBtn == .notYet){
+                                        list.isChecked = true
+                                    }
+                                }, label: {
+                                    Image(systemName: "checkmark").resizable()
+                                        .frame(width: 15, height: 15).foregroundColor(
+                                            list.isChecked == true ? Color("MainGreen") : .gray)
+                                })
+                            }
+                        }
+
                     }.scrollContentBackground(.hidden)
                 } else {
                 }
@@ -66,12 +89,9 @@ struct TodoListView: View {
                 
             }.padding()
         }
-        
-        
-        
     }
     func delete(at offsets: IndexSet) {
-           checkList.remove(atOffsets: offsets)
+        notCheckedLists.remove(atOffsets: offsets)
        }
 }
 

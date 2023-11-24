@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CheckComponent{
+struct CheckComponent: Hashable {
     var isChecked: Bool = false
     var content: String
 }
